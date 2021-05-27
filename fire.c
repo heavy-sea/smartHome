@@ -31,7 +31,7 @@ struct Device fireOn =
 };
 
 
-//添加浴室灯结构体到链表
+//添加火灾模块结构体到链表
 struct Device * addFireToDeviceLinks(struct Device * phead)
 {
 	if (phead == NULL)
@@ -40,8 +40,8 @@ struct Device * addFireToDeviceLinks(struct Device * phead)
 		}
 	else 
 		{
-		fireOn.next 		= phead;
-		phead				= &fireOn;
+		fireOn.next = phead;
+		phead = &fireOn;
 
 		return phead;
 
